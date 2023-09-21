@@ -1,0 +1,10 @@
+{
+    "postman": {
+        "collections": [
+            "3868907-1d032ac3-3fef-4b3e-9638-909c53a7f360"
+        ],
+        "environments": {
+            "UAT": "3868907-52f2b2e6-8fd6-47c4-b339-b1c1d6216585"
+        }
+    }
+}
