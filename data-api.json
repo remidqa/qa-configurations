@@ -1,9 +1,9 @@
 {
-    "testinyioProjectID": 1,
+    "testinyio_project_id": 1,
     "postman": {
-        "testinyIoID": "3",
-        "postmanID": "3868907-1d032ac3-3fef-4b3e-9638-909c53a7f360",
-        "environments": {
+        "testinyio_testcase_id": "3",
+        "postman_collection_id": "3868907-1d032ac3-3fef-4b3e-9638-909c53a7f360",
+        "postman_environments": {
             "UAT": "3868907-52f2b2e6-8fd6-47c4-b339-b1c1d6216585"
         }
     }
