@@ -1,0 +1,19 @@
+{
+    "testinyio_project_id": 1,
+    "postman": {
+        "postman_collection_id": "3868907-6b40761c-bad2-449f-ac8d-06e969c3838d",
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 8,
+                "folder_name": "[faq]GenerateFailure"
+            },
+            {
+                "testinyio_testcase_id": 9,
+                "folder_name": "[experiences]GenerateSuccess"
+            }
+        ],
+        "postman_environments": {
+            "UAT": "3868907-52f2b2e6-8fd6-47c4-b339-b1c1d6216585"
+        }
+    }
+}
