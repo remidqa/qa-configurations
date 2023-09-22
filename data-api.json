@@ -5,15 +5,15 @@
         "scenarios": [
             {
                 "testinyio_testcase_id": 6,
-                "folder_name": "[faq] SanityCheck"
+                "folder_name": "[faq]SanityCheck"
             },
             {
                 "testinyio_testcase_id": 5,
-                "folder_name": "[experiences] SanityCheck"
+                "folder_name": "[experiences]SanityCheck"
             },
             {
                 "testinyio_testcase_id": 7,
-                "folder_name": "[faq] CRUD"
+                "folder_name": "[faq]CRUD"
             }
         ],
         "postman_environments": {
