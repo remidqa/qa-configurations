@@ -1,0 +1,15 @@
+{
+    "testinyio_project_id": 2,
+    "cypress": {
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 14,
+                "file_name": "GenerateSuccess"
+            },
+            {
+                "testinyio_testcase_id": 15,
+                "file_name": "GenerateFailure"
+            }
+        ]
+    }
+}
