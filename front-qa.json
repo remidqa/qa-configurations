@@ -4,11 +4,11 @@
         "scenarios": [
             {
                 "testinyio_testcase_id": 12,
-                "fileName": "SanityCheck"
+                "file_name": "SanityCheck"
             },
             {
                 "testinyio_testcase_id": 13,
-                "folder_name": "Navigation"
+                "file_name": "Navigation"
             }
         ]
     }
