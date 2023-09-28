@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: Read .env File and Set Build Arguments
         run: |
-          echo "${{ vars.ENV }}" > .env
-          cat .env 
+          echo "${{ secrets.ENV }}" > .env
+          source .env
+          echo $YOU
