@@ -75,5 +75,8 @@ jobs:
             if [ -z "$ENV" ]; then echo "'ENV' variable missing"; fi
             exit 1
           else
-            echo "APP='$APP', ENV='$ENV'"
+            echo "starting non-regression for APP='$APP' and ENV='$ENV'"
+            curl -X POST https://api.remidqa.com/run \
+              -H 'Content-Type: application/json' \
+              -d '{"app": "$APP", "env": "$ENV"}'
           fi;
