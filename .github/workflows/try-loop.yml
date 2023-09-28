@@ -29,4 +29,4 @@ jobs:
             #docker build -t your-image-name \
             #  --build-arg $var_name=$var_value .
           done <<< "$ENV_CONTENT"
-          echo "ENV_STRING"
+          echo $ENV_STRING
