@@ -1,4 +1,4 @@
-name: Build Docker Image
+name: try loop
 
 on:
   workflow_dispatch
