@@ -78,5 +78,5 @@ jobs:
             echo "starting non-regression for APP='$APP' and ENV='$ENV'"
             curl -X POST https://api.remidqa.com/run \
               -H 'Content-Type: application/json' \
-              -d '{"app": "$APP", "env": "$ENV"}'
+              -d '{"app": "'"$APP"'", "env": "'"$ENV"'"}'
           fi;
