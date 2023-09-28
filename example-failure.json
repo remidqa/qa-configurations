@@ -10,6 +10,7 @@
                 "testinyio_testcase_id": 15,
                 "file_name": "GenerateFailure"
             }
-        ]
+        ],
+        "envs": ["uat"]
     }
 }
