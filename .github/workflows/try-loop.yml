@@ -10,11 +10,5 @@ jobs:
     steps:
       - name: Read .env File and Set Build Arguments
         run: |
-          export ENV_CONTENT=tr '\n' ',' < ${{ vars.ENV }}
-          echo $ENV
-          export ENV_STRING=''
-
-          IFS=$'\n'       # Set Internal Field Separator to newline
-          for line in $my_secret; do
-            echo "Line: $line"
-          done
+          echo "${{ vars.ENV }}" > .env
+          cat .env 
