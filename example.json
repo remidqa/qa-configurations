@@ -11,6 +11,6 @@
                 "file_name": "Navigation"
             }
         ],
-        "envs": ["UAT", "preview"]
+        "envs": ["uat", "preview"]
     }
 }
