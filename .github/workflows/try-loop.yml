@@ -1,0 +1,31 @@
+name: Build Docker Image
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Read .env File and Set Build Arguments
+        run: |
+          export ENV_CONTENT=$(${{ secrets.ENV }})
+          export ENV_STRING=''
+
+          while IFS= read -r line; do
+            # Extract the variable name and value
+            var_name=$(echo $line | cut -d '=' -f 1)
+            echo "::add-mask::$(echo $line | cut -d '=' -f 2)"
+            var_value=$(echo $line | cut -d '=' -f 2)
+
+            # Export the variable
+            #export "$var_name=$var_value"
+            ENV_STRING="${ENV_STRING} ${var_name}=${var_value}"
+
+            # Pass the variable as a build argument
+            #echo "Passing $var_name as build argument"
+            #docker build -t your-image-name \
+            #  --build-arg $var_name=$var_value .
+          done <<< "$ENV_CONTENT"
+          echo "ENV_STRING"
