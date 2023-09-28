@@ -20,6 +20,8 @@ on:
         required: true
       SSH_PRIVATE_KEY:
         required: true
+      ENV_VARS:
+        required: true
 
 env:
   APP: ${{ inputs.APP }}
@@ -32,6 +34,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: docker login
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
+    - name: create .env file
+      run: |
+        echo "${{ secrets.ENV_VARS }}" > .env
+        cat .env 
     - name: Build docker image
       run: docker build -t $APP .
     - name: Docker tag
