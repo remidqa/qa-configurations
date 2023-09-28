@@ -20,7 +20,7 @@ on:
         required: true
       SSH_PRIVATE_KEY:
         required: true
-      ENV_VARS:
+      ENV:
         required: true
 
 env:
@@ -36,7 +36,7 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: create .env file
       run: |
-        echo "${{ secrets.ENV_VARS }}" > .env
+        echo "${{ secrets.ENV }}" > .env
         cat .env 
     - name: Build docker image
       run: docker build -t $APP .
