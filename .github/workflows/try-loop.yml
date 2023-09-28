@@ -16,8 +16,9 @@ jobs:
           while IFS= read -r line; do
             # Extract the variable name and value
             var_name=$(echo $line | cut -d '=' -f 1)
-            echo "::add-mask::$(echo $line | cut -d '=' -f 2)"
             var_value=$(echo $line | cut -d '=' -f 2)
+            echo "::add-mask::$var_value"
+            
 
             # Export the variable
             #export "$var_name=$var_value"
