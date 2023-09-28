@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Read .env File and Set Build Arguments
         run: |
-          export ENV_CONTENT=${{ secrets.ENV }}
+          export ENV_CONTENT=${{ env.ENV }}
           export ENV_STRING=''
 
           IFS=$'\n'       # Set Internal Field Separator to newline
