@@ -1,0 +1,36 @@
+{
+    "testinyio_project_id": 3,
+    "postman": {
+        "postman_collection_id": "3868907-f7ccc1b7-615b-4d92-af20-079648d68a05",
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 16,
+                "folder_name": "[faq]SanityCheck"
+            },
+            {
+                "testinyio_testcase_id": 17,
+                "folder_name": "[experiences]SanityCheck"
+            },
+            {
+                "testinyio_testcase_id": 18,
+                "folder_name": "[faq]CRUD"
+            }
+        ],
+        "postman_environments": {
+            "uat": "3868907-7fca4b89-fe7c-4173-aa3d-25f52b3d7e71"
+        }
+    },
+"cypress": {
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 19,
+                "file_name": "SanityCheck"
+            },
+            {
+                "testinyio_testcase_id": 20,
+                "file_name": "Navigation"
+            }
+        ],
+        "envs": ["uat"]
+    }
+}
