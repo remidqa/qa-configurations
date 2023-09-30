@@ -1,0 +1,32 @@
+{
+    "testinyio_project_id": 1,
+    "postman": {
+        "postman_collection_id": "3868907-6b40761c-bad2-449f-ac8d-06e969c3838d",
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 8,
+                "folder_name": "[faq]GenerateFailure"
+            },
+            {
+                "testinyio_testcase_id": 9,
+                "folder_name": "[experiences]GenerateSuccess"
+            }
+        ],
+        "postman_environments": {
+            "uat": "3868907-7fca4b89-fe7c-4173-aa3d-25f52b3d7e71"
+        }
+    },
+  "cypress": {
+        "scenarios": [
+            {
+                "testinyio_testcase_id": 14,
+                "file_name": "GenerateSuccess"
+            },
+            {
+                "testinyio_testcase_id": 15,
+                "file_name": "GenerateFailure"
+            }
+        ],
+        "envs": ["uat"]
+    }
+}
