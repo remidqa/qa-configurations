@@ -4,11 +4,11 @@
         "postman_collection_id": "3868907-6b40761c-bad2-449f-ac8d-06e969c3838d",
         "scenarios": [
             {
-                "testinyio_testcase_id": 8,
+                "testinyio_testcase_id": 21,
                 "folder_name": "[faq]GenerateFailure"
             },
             {
-                "testinyio_testcase_id": 9,
+                "testinyio_testcase_id": 22,
                 "folder_name": "[experiences]GenerateSuccess"
             }
         ],
@@ -19,11 +19,11 @@
   "cypress": {
         "scenarios": [
             {
-                "testinyio_testcase_id": 14,
+                "testinyio_testcase_id": 23,
                 "file_name": "GenerateSuccess"
             },
             {
-                "testinyio_testcase_id": 15,
+                "testinyio_testcase_id": 24,
                 "file_name": "GenerateFailure"
             }
         ],
